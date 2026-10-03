@@ -23,7 +23,15 @@ A full-stack web application for tracking personal finances.
 2. Enter the backend directory and set up the environment:
      ```
      cd backend
-     cp .env.example .env
+     ```
+     - Create a file named .env in /backend and add:
+     ```
+     DB_HOST=localhost
+     DB_PORT=5432
+     DB_USER=postgres
+     DB_PASSWORD=your_actual_password
+     DB_NAME=expense_tracker
+     PORT=3000
      ```
 3. Install dependencies and start the server:
      npm install
